@@ -17,8 +17,7 @@ class School
 
   def sort
     sorted = {}
-    @roster.each do |k, v|
-      sorted[k] = v.sort
+    @roster.each{ |k, v| sorted[k] = v.sort}
     end
     sorted
   end
