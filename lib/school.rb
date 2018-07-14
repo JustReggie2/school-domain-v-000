@@ -16,8 +16,10 @@ class School
   end
 
   def sort
-    @roster.sort.each{|k, v| v.sort}.to_h
-binding.pry
-    #@roster.sort_by{|k, v| v}.to_h
+    sorted = {}
+    @roster.each do |k, v|
+      sorted[k] = v.sort
+    end
+    sorted
   end
 end
