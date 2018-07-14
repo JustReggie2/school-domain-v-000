@@ -3,7 +3,7 @@ class School
 
   def initialize(school_name)
     @school_name = school_name
-    @roster = Hash.new{ |s, g| s[k] = [] }
+    @roster = Hash.new{ |s, g| s[g] = [] }
   end
 
   def add_student(student, grade)
